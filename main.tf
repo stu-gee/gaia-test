@@ -18,7 +18,7 @@ resource "google_compute_instance" "default" {
   labels = {
     billing     = "102012",
     dept        = "IT",
-    environment = "testing"
+    #environment = "testing"
   }
 
 }
