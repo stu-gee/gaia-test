@@ -2,7 +2,7 @@
 resource "google_compute_instance" "default" {
   name         = "test-instance-1"
   machine_type = "e2-medium"
-  #zone         = "us-central1-b"
+  zone         = "us-central1-a"
 
   boot_disk {
     initialize_params {
@@ -17,7 +17,7 @@ resource "google_compute_instance" "default" {
 
   labels = {
    # billing     = "102012",
-   # dept        = "IT",
+    dept        = "IT",
    # environment = "sandbox"
   }
 
